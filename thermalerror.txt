@@ -1,0 +1,17 @@
+[02:08:16] [Server thread/ERROR] [thermal/]: Thermal Dynamics encountered an error during grid ticking:
+java.util.ConcurrentModificationException: null
+        at java.util.HashMap$HashIterator.nextNode(HashMap.java:1597) ~[?:?] {}
+        at java.util.HashMap$ValueIterator.next(HashMap.java:1625) ~[?:?] {}
+        at cofh.thermal.dynamics.handler.GridContainer.onWorldTick(GridContainer.java:419) ~[thermal_dynamics-1.19.2-10.3.0.20.jar%23506!/:10.3.0] {re:classloading}
+        at cofh.thermal.dynamics.handler.GridEvents.onWorldTick(GridEvents.java:35) ~[thermal_dynamics-1.19.2-10.3.0.20.jar%23506!/:10.3.0] {re:classloading}
+        at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:260) ~[eventbus-6.0.3.jar%2351!/:?] {}
+        at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:252) ~[eventbus-6.0.3.jar%2351!/:?] {}
+        at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.3.jar%2351!/:?] {}
+        at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.3.jar%2351!/:?] {}
+        at net.minecraftforge.event.ForgeEventFactory.onPostLevelTick(ForgeEventFactory.java:820) ~[forge-1.19.2-43.2.14-universal.jar%23542!/:?] {re:classloading}
+        at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:872) ~[server-1.19.2-20220805.130853-srg.jar%23537!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:kubejs-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:kubejs-common.mixins.json:inject_resources.MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+        at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:292) ~[server-1.19.2-20220805.130853-srg.jar%23537!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:nochatreports.mixins.json:server.MixinDedicatedServer,pl:mixin:A}
+        at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:806) ~[server-1.19.2-20220805.130853-srg.jar%23537!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:kubejs-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:kubejs-common.mixins.json:inject_resources.MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+        at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:654) ~[server-1.19.2-20220805.130853-srg.jar%23537!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:kubejs-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:kubejs-common.mixins.json:inject_resources.MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+        at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:244) ~[server-1.19.2-20220805.130853-srg.jar%23537!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:kubejs-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:kubejs-common.mixins.json:inject_resources.MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+        at java.lang.Thread.run(Thread.java:840) [?:?] {re:mixin}
